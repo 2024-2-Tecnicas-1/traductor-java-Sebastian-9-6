@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class TraductorJava {
 
     public static void main(String[] args) {
-      Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         HashMap<Integer, String> numeros = new HashMap<>();
         numeros.put( 0, "cero");
         numeros.put( 1, "uno");
@@ -110,7 +110,7 @@ public class TraductorJava {
         numeros.put( 99, "noventa y nueve");
         numeros.put( 100, "cien");
         HashMap<Integer, String> numbers = new HashMap<>();
-        numbers.put( 0, "zero");
+         numbers.put( 0, "zero");
         numbers.put( 1, "one");
         numbers.put( 2, "two");
         numbers.put( 3, "three");
@@ -211,23 +211,14 @@ public class TraductorJava {
         numbers.put( 98, "ninety-eight");
         numbers.put( 99, "ninety-nine");
         numbers.put( 100, "one hundred");
-        System.out.println("Introduce el primer numero del uno al cien (1-100):");
+        System.out.println("Introduce el primer numero del uno al cien (1-100): ");
         int numero1 = scan.nextInt();
-        System.out.println("Introduce el segundo numero del uno al cien (1-100):");
+        System.out.println("Introduce el segundo numero del uno al cien (1-100): ");
         int numero2 = scan.nextInt();
         int suma = numero1+numero2;
-        if(numero1<0|numero1>100){
-            System.out.println("Numero no valido");
-        }
-        
-        if(numero2<0|numero2>100){
-            System.out.println("Numero no valido");
-        }
-        
-        String español ="La suma del numero "+numeros.get(numero1)+" y el numero "+numeros.get(numero2)+" es: "+numeros.get(suma);
-        String english ="The plus of number "+numbers.get(numero1)+" and number "+numbers.get(numero2)+" is: "+numbers.get(suma);
+        String español = "La suma del numero "+numeros.get(numero1)+" y el numero "+numeros.get(numero2)+" es: "+numeros.get(suma);
+        String english = "The plus of number "+numbers.get(numero1)+" and number "+numbers.get(numero2)+" is: "+numbers.get(suma);
         System.out.println(español);
-        System.out.println(english);  
-        
+        System.out.println(english);
     }
 }
